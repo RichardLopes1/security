@@ -39,6 +39,8 @@ export const NavMenu = styled.nav`
     }
 
 
+    
+
 `
 
 export const FooterRodape = styled.footer`
@@ -66,14 +68,6 @@ export const MainGeral = styled.main`
     width: 100%;
     padding: 20px;
 
-    h1{
-        text-align: center;
-        color: darkred;
-    }
-
-    p{
-        text-indent:20px;
-    }
 
 `
 
@@ -84,7 +78,7 @@ export const SectionDiferencial = styled.section`
 }
 #Titulo_diferencial{
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
@@ -172,6 +166,18 @@ h2{
     line-height: 1.8;
 }
 
+
+@media screen and (max-width: 700px) {
+    v
+
+
+.card {
+    display: flexbox;
+    flex-direction: column;
+}
+
+
+}
 `
 
 export const MainError = styled.main`
@@ -406,6 +412,35 @@ export const MainGuincho = styled.main`
   
 }
 
+@media screen and (max-width: 700px){
+    .Container{
+    display: flex;
+    flex-direction: c;
+    gap: 2px;
+    
+   
+    text-align: center;
+   
+
+}
+
+    .servicos_rapido h4{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+
+}
+.servicos_rapido p{
+    
+    font-size: 17px;
+    padding: 0;
+    margin-bottom: 20px;
+   
+  
+}
+}
+
 
 
 
@@ -504,6 +539,109 @@ h2{
     height: 70px;
     margin-right: 30px;
 }
+
+@media screen and (max-width: 700px){
+    .container{
+    max-width: 700px;
+    margin: 50px ;
+    display: columns;
+    flex-direction: column;
+    font-size: 17px;
+    line-height: 2.3rem;
+    margin-top: 2rem;
+}
+
+.container-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2;
+  
+   
+    
+}
+
+.container-grid .card{
+    border: 1px solid #000000;
+    height: 370px;
+    width: 270px;
+    margin-left: 100px;
+    font-size: 17px;
+    border-radius: 10px;
+    
+
+}
+
+.sobre{
+   text-align: justify;
+   justify-content: left;
+   font-size: 20px;
+   height: auto;
+   margin-top: 50px;
+   font-weight: bolder;
+   color: #03346E;
+}
+
+.logo_whatsapp{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60px;
+    margin-right: 0px;
+}
+
+}
+@media screen and  (min-width: 701px)and (max-width: 1014px){
+    .sobre{
+   text-align: center;
+   justify-content: center;
+   font-size: 20px;
+   
+   margin-left: 0;
+   font-weight: bolder;
+   color: #03346E;
+}
+
+
+
+.container-grid {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    gap: 2;
+  
+   
+    
+}
+}
+
+@media screen and  (min-width: 1015px)and (max-width: 1092px){
+
+    .sobre{
+   text-align: center;
+   justify-content: center;
+   font-size: 20px;
+   margin-top: 100px;
+   margin-left: 0;
+   font-weight: bolder;
+   color: #03346E;
+    }
+
+    .container-grid .card img{
+  
+   
+   
+    
+}
+.container-grid .card{
+    border: 1px solid #000000;
+    margin-top: 20px;
+    height: 430px;
+    width: 270px;
+    font-size: 17px;
+    border-radius: 10px;
+    
+
+}
+}
 `
 export const MainSobre = styled.main`
    margin-top: 30px;
@@ -534,7 +672,7 @@ export const MainSobre = styled.main`
 }
 
 .card {
-    display: block;
+   
     background-color: #eeeeee;
     width: 20rem;
     height: 30rem; 
@@ -554,10 +692,9 @@ export const MainSobre = styled.main`
 }
 
 .card img{
-    width: 20rem;
-    height: 20rem;
-    border-radius: 5px;
-}
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;}
 
 
 
@@ -567,6 +704,30 @@ export const MainSobre = styled.main`
     
 }
 
+/* Media Query para telas menores que 700px */
+@media screen and (max-width: 700px) {
+   
+
+    .sobre_nos h1{
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-align: center;
+}
+
+    .Titulo{
+       font-size: 22px;
+       
+    }
+  .integrante {
+   
+  }
+
+  .card {
+   
+    width: 100%;
+    height: 20rem; 
+}
+}
 
 `
 

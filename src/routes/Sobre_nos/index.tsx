@@ -1,4 +1,6 @@
 import imageRichard from "../../assets/richard.jpg"
+import imageEmily from "../../assets/emily.jpg"
+import imageYanick from "../../assets/Yanick Jose Zen dos Santos.jpg"
 
 import {  MainSobre } from "../../styled"
 
@@ -22,7 +24,7 @@ export default function Produtos(){
                     </div>
 
                     <h1 className="Titulo">Conheça os integrantes da Security:</h1>
-                        <div className="Integrantes">
+                    <div className="Integrantes">
                             <div className="card">
                                 <img src={imageRichard} alt="" />
                                 <div className="links_pessoais">
@@ -37,10 +39,27 @@ export default function Produtos(){
 
 
                             <div className="card">
-                           
+                                <img src={imageEmily} alt="" />
+                                <div className="links_pessoais">
+                                    <p>Emily Maria</p>
+                                    <ul>
+                                        <li><a href="https://www.instagram.com/emy_5198/profilecard/?igsh=MXYxdGpwN21lcWtnbQ=="
+                                            target="_blank">Instagram</a></li>
+                                        <li><a href="https://www.linkedin.com/in/emily-macedo-5a9474329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank ">linkedin</a></li>
+                                    </ul>
+                                </div>
                             </div>
+
                             <div className="card">
-                            
+                            <img src={imageYanick} alt="" />
+                                <div className="links_pessoais">
+                                    <p>Yanick Jose Zen dos Santos</p>
+                                    <ul>
+                                        <li><a href="https://www.instagram.com/ynk.s_?igsh=MWQ4bzU4NHNiYTdsbQ%3D%3D&utm_source=qr"
+                                            target="_blank">Instagram</a></li>
+                                        <li><a href="https://teams.microsoft.com/l/message/48:notes/1726488629062?context=%7B%22contextType%22%3A%22chat%22%7D" target="_blank ">linkedin</a></li>
+                                    </ul>
+                                </div>
                             </div>
                      </div>
         </MainSobre>
