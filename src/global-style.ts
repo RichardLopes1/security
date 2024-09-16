@@ -9,12 +9,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    #root{
-        width: 100vw;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
+   
 
 `
 export default GlobalStyle

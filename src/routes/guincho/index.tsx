@@ -6,6 +6,7 @@ import { MainGuincho } from "../../styled"
 
 
 
+
 export default function Guincho(){
     return(
         <MainGuincho>
@@ -54,7 +55,7 @@ export default function Guincho(){
                 </p>
             </div>
 
-        <map/>
+      
             
         </MainGuincho>
     )}    

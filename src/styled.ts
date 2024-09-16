@@ -4,7 +4,7 @@ import imageFundoGuincho from "./assets/fundo_guincho.jpg"
 
 export const NavMenu = styled.nav`
 
-display: flex;
+    display: flex;
     align-items: center;
     background-color: #0095d4;
     width: 100%;
@@ -43,14 +43,15 @@ display: flex;
 
 export const FooterRodape = styled.footer`
     
-
+    
     width: 100%;
     min-height: 5vh;
     background-color: #333;
     padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    
     
     p{
         color: #fff;
@@ -110,13 +111,10 @@ h2{
     display: flex;
     gap: 2.5rem;
     justify-content: center;
-
+  
 }
 
-.container-grid a{
-    text-decoration: none;
-    color: black;
-}
+ 
 
 @keyframes animacao-card {
     from{
@@ -209,9 +207,23 @@ export const DivContainer = styled.div`
     display: flex;
     gap: 2.5rem;
     justify-content: center;
-
+    
+    .Links-cards{
+    text-decoration: none;
+   color: black;
+}
     img{
         padding-top: 30px;
+    }
+
+    .container-grid Link{
+        list-style: none;
+        text-decoration: none;
+    }
+
+    Link{
+        list-style: none;
+        text-decoration: none;
     }
 
 
@@ -227,7 +239,7 @@ export const DivCards = styled.div`
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-
+    
 
 
 .Titulo_servicos{
@@ -402,7 +414,9 @@ export const MainGuincho = styled.main`
 
 export const MainMecanica = styled.main`
 
-.container{   
+
+.container{
+    
     max-width: 800px;
     margin: 0 auto;
     display: flex;
@@ -411,7 +425,6 @@ export const MainMecanica = styled.main`
     line-height: 2.3rem;
     margin-top: 2rem;
 }
-
 .container h1{
     font-weight:lighter;
 }
@@ -434,19 +447,18 @@ h2{
     margin-top: 3rem;
 }
 
-.container .container-grid {
-   
+.container-grid {
+    display: flex;
     gap: 2.5rem;
-
     justify-content: center;
    
     
 }
 
 .container-grid .card{
-    display: flex;
-    border: 1px solid black;
-    
+    border: 1px solid #000000;
+    height: 370px;
+    width: 270px;
     font-size: 17px;
     border-radius: 10px;
     
@@ -454,9 +466,9 @@ h2{
 }
 
 .container-grid .card h3{
-    border: 1px solid var(--preto);
+    border: 1px solid #000000;
     border-radius: 6px;
-    background-color: var(--azul);
+    background-color: #0095d4;
 }
 
 .container-grid .card p{
@@ -480,10 +492,10 @@ h2{
    text-align: center;
    justify-content: center;
    font-size: 20px;
-   padding: 0 300px;
+  
    margin-top: 50px;
    font-weight: bolder;
-   color: var(--azul_logo);
+   color: #03346E;
 }
 
 .logo_whatsapp{
@@ -493,3 +505,68 @@ h2{
     margin-right: 30px;
 }
 `
+export const MainSobre = styled.main`
+   margin-top: 30px;
+
+.sobre_nos h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sobre_nos p{
+  text-indent: 20px;
+}
+
+//integrantes
+
+.Titulo{
+    margin-top:50px ;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/*inicio card*/
+.Integrantes{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+
+}
+
+.card {
+    display: block;
+    background-color: #eeeeee;
+    width: 20rem;
+    height: 30rem; 
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 20px 20px rgb(0,0,0,0.2);
+   margin-bottom: 50px;
+}
+
+.links_pessoais{
+ 
+    margin-top: 30px;
+}
+
+.links_pessoais ul li {
+   padding-top: 10px;
+}
+
+.card img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 5px;
+}
+
+
+
+.card ul, li, a{
+    color: #000000;
+    list-style: none;
+    
+}
+
+
+`
+

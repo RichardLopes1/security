@@ -40,7 +40,7 @@ export default function Home(){
             </DivTitulo>
             <br /><br />
             <DivContainer className="container-grid">
-                <Link to="/Seguro">
+                <Link to ="/Seguro" className="Links-cards" >
                     <DivCards className="card">
                         <h3>Seguro</h3>
                         <img src={imageCardCarro} alt="" />
@@ -49,14 +49,14 @@ export default function Home(){
                 </Link>
 
                 
-                <Link to="/Guincho">
+                <Link to="/Guincho" className="Links-cards">
                     <DivCards className="card">
                         <h3>Guincho</h3>
                         <img src={imageGuincho} alt="" />
                     </DivCards>
                 </Link>
 
-                <Link to="/Mecanica">
+                <Link to="/Mecanica" className="Links-cards">
                     <DivCards className="card">
                         <h3>Mecanica</h3>
                         <img src={imageMecanica} alt="" />

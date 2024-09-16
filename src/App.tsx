@@ -5,6 +5,8 @@ import Rodape from "./components/Rodape"
 
 
 
+
+
 function App() {
 
 
@@ -12,6 +14,7 @@ function App() {
     <>
       <Menu/>  {/** Elemento Menu fica fixo na página */}
       <Outlet/>
+      
       <Rodape/> {/** Elemento Rodape fica fixo na página */}
     </>
   )

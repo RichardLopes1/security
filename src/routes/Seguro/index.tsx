@@ -19,7 +19,6 @@ export default function Seguro(){
     </div>
     <div className="cobertura">
         <div className="card">
-c
            <img src={imageRoubo} alt="" />
             <h3>Roubo ou furto</h3>
             <p>Se o carro for roubado ou furtado, conte com a indenização.</p>
