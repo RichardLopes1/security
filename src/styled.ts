@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import imageSeguro from "./assets/seguro.png"
-import imageFundoGuincho from "./assets/fundo_guincho.jpg"
+import imageFundoGuincho from "./assets/fundo_guincho.jpg";
+import imageSeguro from "./assets/seguro.png";
 
 export const NavMenu = styled.nav`
 
@@ -67,7 +67,7 @@ export const MainGeral = styled.main`
     flex-grow: 1;
     width: 100%;
     padding: 20px;
-
+    line-height: 1.7rem;
 
 `
 
@@ -167,17 +167,7 @@ h2{
 }
 
 
-@media screen and (max-width: 700px) {
-    v
 
-
-.card {
-    display: flexbox;
-    flex-direction: column;
-}
-
-
-}
 `
 
 export const MainError = styled.main`
@@ -232,6 +222,15 @@ export const DivContainer = styled.div`
         text-decoration: none;
     }
 
+    @media screen and (max-width: 600px) {
+  .container-grid {
+    
+  }
+
+  .card {
+  
+}
+    }
 
 `
 export const DivCards = styled.div`
@@ -307,7 +306,9 @@ export const MainSeguro = styled.main`
     align-items: center;
     justify-content: center;
     line-height: 4rem;
-
+    background-position: center;
+    
+    background-size: cover;
 }
 
 .conteudo h1{
@@ -323,6 +324,33 @@ export const MainSeguro = styled.main`
     font-size: 25px;
     line-height: 1.5;
 }
+.Sobre_seguro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 3rem;
+    
+    width: 100%;
+    height: 250px;
+    background-color: #EEEDEB;
+}
+
+.titulo_sobre_seguro{
+    
+    display: flex;
+    width:75% ;
+    margin-bottom: 2.5rem;
+}
+
+.conteudo_sobre_seguro{
+    text-align: justify;
+    width: 75%;
+}
+
+
+
 
 .titulo{
     font-size: 1rem;
